@@ -1,0 +1,19 @@
+{
+  "name": "layout-task",
+  "version": "1.0.0",
+  "description": "layout for FxPro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Valerykolm/taskFxPro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valerykolm/taskFxPro/issues"
+  },
+  "homepage": "https://github.com/Valerykolm/taskFxPro#readme"
+}
