@@ -1,0 +1,28 @@
+.logo {
+  margin-top: 42px;
+}
+
+.header {
+  background-image: url('img/bg.png');
+  margin-top: 132px;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.w-270 {
+  width: 270px;
+}
+
+.img-wrap {
+  position: relative;
+  &_1 {
+    left: 100%;
+    z-index: 7;
+  }
+  &_3 {
+    z-index: 4;
+  }
+}
