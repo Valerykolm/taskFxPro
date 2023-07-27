@@ -1,28 +1,140 @@
-.logo {
-  margin-top: 42px;
+@import 'colors';
+
+@font-face {
+  font-family: 'FuturaPTMedium';
+  src: url('../fonts/FuturaPTMedium.eot');
+  src: url('../fonts/FuturaPTMedium.eot') format('embedded-opentype'),
+       url('../fonts/FuturaPTMedium.woff2') format('woff2'),
+       url('../fonts/FuturaPTMedium.woff') format('woff'),
+       url('../fonts/FuturaPTMedium.ttf') format('truetype'),
+       url('../fonts/FuturaPTMedium.svg#FuturaPTMedium') format('svg');
 }
 
-.header {
-  background-image: url('img/bg.png');
-  margin-top: 132px;
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.row {
-  justify-content: center;
-  align-items: center;
+.text-qr {
+  width: 195px;
+  p {
+    color: $text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+#main {
+  background: radial-gradient(#F6F3EF00, #F6F3EF);
+  padding-top: 42px;
+
+  h1 {
+    padding-top: 106px;
+    font-family: 'FuturaPTMedium', sans-serif;
+    font-size: 52px;
+    line-height: 57.2px;
+    text-align: center;
+    color: $text-color;
+    width: 570px;
+    padding-bottom: 49px;
+  }
+}
+
+#description {
+  p {
+    width: 270px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .ellipse {
+    background: url(../img/ellipse.png) no-repeat center;
+    background-size: 100%;
+    .bold {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+    }
+  }
+}
+
+#slider {
+  padding-top: 100px;
+}
+
+#download {
+  h3 {
+    width: 570px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+#opportunity {
+  padding-top: 20px;
+  h3 {
+    color: $text-description;
+    width: 470px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
 }
 
 .w-270 {
   width: 270px;
 }
 
+.w-570 {
+  width: 570px;
+}
+
 .img-wrap {
   position: relative;
-  &_1 {
-    left: 100%;
-    z-index: 7;
+  width: 100%;
+  &_bottom {
+    position: absolute;
+    left: -165px;
+    top: 72px;
+    z-index: -2;
   }
-  &_3 {
-    z-index: 4;
+  &_middle {
+    top: 0px;
+    right: 83px;
+    position: absolute;
+    z-index: -1;
+  }
+  &_top {
+    padding-top: 72px;
+    padding-left: 83px;
+  }
+  &_opportunity_bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &_opportunity_top {
+    padding-top: 83px;
+    padding-right: 136px;
   }
 }
+
+.simple_ellipse {
+  background: url(../img/simple-ellipse.png) no-repeat center;
+  background-size: 100%;
+  width: 270px;
+  p {
+    color: $text-description;
+  }
+  .apple {
+    padding-top: 26px;
+  }
+  .google {
+    padding-top: 13px;
+  }
+}
+

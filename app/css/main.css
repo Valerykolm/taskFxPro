@@ -1,28 +1,127 @@
-.logo {
-  margin-top: 42px;
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPTMedium.eot");
+  src: url("../fonts/FuturaPTMedium.eot") format("embedded-opentype"), url("../fonts/FuturaPTMedium.woff2") format("woff2"), url("../fonts/FuturaPTMedium.woff") format("woff"), url("../fonts/FuturaPTMedium.ttf") format("truetype"), url("../fonts/FuturaPTMedium.svg#FuturaPTMedium") format("svg");
+}
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.header {
-  background-image: url("img/bg.png");
-  margin-top: 132px;
+.text-qr {
+  width: 195px;
+}
+.text-qr p {
+  color: #1D2B3F;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.row {
-  justify-content: center;
-  align-items: center;
+#main {
+  background: radial-gradient(rgba(246, 243, 239, 0), #F6F3EF);
+  padding-top: 42px;
+}
+#main h1 {
+  padding-top: 106px;
+  font-family: "FuturaPTMedium", sans-serif;
+  font-size: 52px;
+  line-height: 57.2px;
+  text-align: center;
+  color: #1D2B3F;
+  width: 570px;
+  padding-bottom: 49px;
+}
+
+#description p {
+  width: 270px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+#description .ellipse {
+  background: url(../img/ellipse.png) no-repeat center;
+  background-size: 100%;
+}
+#description .ellipse .bold {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+#slider {
+  padding-top: 100px;
+}
+
+#download h3 {
+  width: 570px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#opportunity {
+  padding-top: 20px;
+}
+#opportunity h3 {
+  color: #2D3436;
+  width: 470px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
 }
 
 .w-270 {
   width: 270px;
 }
 
+.w-570 {
+  width: 570px;
+}
+
 .img-wrap {
   position: relative;
+  width: 100%;
 }
-.img-wrap_1 {
-  left: 100%;
-  z-index: 7;
+.img-wrap_bottom {
+  position: absolute;
+  left: -165px;
+  top: 72px;
+  z-index: -2;
 }
-.img-wrap_3 {
-  z-index: 4;
+.img-wrap_middle {
+  top: 0px;
+  right: 83px;
+  position: absolute;
+  z-index: -1;
+}
+.img-wrap_top {
+  padding-top: 72px;
+  padding-left: 83px;
+}
+.img-wrap_opportunity_bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img-wrap_opportunity_top {
+  padding-top: 83px;
+  padding-right: 136px;
+}
+
+.simple_ellipse {
+  background: url(../img/simple-ellipse.png) no-repeat center;
+  background-size: 100%;
+  width: 270px;
+}
+.simple_ellipse p {
+  color: #2D3436;
+}
+.simple_ellipse .apple {
+  padding-top: 26px;
+}
+.simple_ellipse .google {
+  padding-top: 13px;
 }
