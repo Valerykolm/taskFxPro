@@ -1,4 +1,6 @@
 @import 'colors';
+@import 'variables';
+@import 'media';
 
 @font-face {
   font-family: 'FuturaPTMedium';
@@ -14,22 +16,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.text-qr {
-  width: 195px;
-  p {
-    color: $text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+header {
+  background: radial-gradient(#F6F3EF00, #F6F3EF);
+  .logo {
+    padding-top: 42px;
+    padding-bottom: 51px;
   }
 }
 
 #main {
-  background: radial-gradient(#F6F3EF00, #F6F3EF);
-  padding-top: 42px;
+  background: url(../img/header_bg.png) no-repeat;
+  padding-top: 55px;
 
   h1 {
-    padding-top: 106px;
     font-family: 'FuturaPTMedium', sans-serif;
     font-size: 52px;
     line-height: 57.2px;
@@ -37,6 +36,16 @@ body {
     color: $text-color;
     width: 570px;
     padding-bottom: 49px;
+  }
+
+  .text-qr {
+    width: 195px;
+    p {
+      color: $text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
 }
 
@@ -83,6 +92,10 @@ body {
     font-size: 22px;
     line-height: 33px;
   }
+  .ellipse-blue {
+    background: url(../img/ellipse-blue.png) no-repeat center;
+    background-size: 100%;
+  }
 }
 
 .w-270 {
@@ -91,6 +104,10 @@ body {
 
 .w-570 {
   width: 570px;
+}
+
+.pl-160 {
+  padding-left: 160px;
 }
 
 .img-wrap {
@@ -114,11 +131,11 @@ body {
   }
   &_opportunity_bottom {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 83px;
+    left: 136px;
   }
   &_opportunity_top {
-    padding-top: 83px;
+    padding-bottom: 83px;
     padding-right: 136px;
   }
 }

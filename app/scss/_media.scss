@@ -1,0 +1,20 @@
+/*Adaptive*/
+
+@media (max-width: 767px) {
+  #main {
+    .adaptive {
+      width: 100%;
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+    .mt-4-desktop {
+      display: none;
+    }
+    .text-qr {
+      display: none;
+    }
+    .qr-mobile {
+      display: none;
+    }
+  }
+}
