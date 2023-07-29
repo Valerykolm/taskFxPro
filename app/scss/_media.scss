@@ -1,7 +1,15 @@
 /*Adaptive*/
 
 @media (max-width: 767px) {
+  .mt-4-mobile {
+    display: block!important;
+  }
+  .logo {
+    padding-bottom: 41px!important;
+  }
   #main {
+    padding-top: 14px!important;
+    padding-bottom: 35px!important;
     .adaptive {
       width: 100%;
       font-size: 36px;
@@ -15,6 +23,39 @@
     }
     .qr-mobile {
       display: none;
+    }
+    .apple {
+      display: block!important;
+    }
+    .google {
+      display: block!important;
+    }
+  }
+  #description {
+    position: static!important;
+    .simple_ellipse {
+      padding-top: 80px;
+      text-align: center;
+    }
+  }
+  #download {
+    text-align: center;
+    h3 {
+      width: auto!important;
+    }
+  }
+  #opportunity {
+    text-align: center;
+    h3 {
+      width: auto!important;
+    }
+    .text-qr p {
+      text-align: center!important;
+    }
+  }
+  #footer {
+    .main-btn {
+      padding: 16px 55px!important;
     }
   }
 }

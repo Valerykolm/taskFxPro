@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -22,12 +23,15 @@ header {
     padding-top: 42px;
     padding-bottom: 51px;
   }
+  .mt-4-mobile {
+    display: none;
+  }
 }
 
 #main {
   background: url(../img/header_bg.png) no-repeat;
   padding-top: 55px;
-
+  padding-bottom: 130px;
   h1 {
     font-family: 'FuturaPTMedium', sans-serif;
     font-size: 52px;
@@ -37,19 +41,18 @@ header {
     width: 570px;
     padding-bottom: 49px;
   }
-
-  .text-qr {
-    width: 195px;
-    p {
-      color: $text-color;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
-    }
+  .apple {
+    display: none;
+  }
+  .google {
+    display: none;
   }
 }
 
 #description {
+  position: relative;
+  top: -110px;
+  z-index: 1;
   p {
     width: 270px;
     font-weight: 400;
@@ -72,6 +75,7 @@ header {
 }
 
 #download {
+  padding-top: 40px;
   h3 {
     width: 570px;
     font-weight: 600;
@@ -98,12 +102,26 @@ header {
   }
 }
 
-.w-270 {
-  width: 270px;
+#footer {
+  padding-bottom: 114px;
+  .main-btn {
+    background-color: $button-color;
+    border: none;
+    padding: 16px 370px;
+    a {
+      color: $link-color;
+    }
+  }
 }
 
-.w-570 {
-  width: 570px;
+.text-qr {
+  width: 195px;
+  p {
+    color: $text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .pl-160 {
@@ -115,19 +133,19 @@ header {
   width: 100%;
   &_bottom {
     position: absolute;
-    left: -165px;
+    right: 200px;
     top: 72px;
     z-index: -2;
   }
   &_middle {
     top: 0px;
-    right: 83px;
+    left: 65px;
     position: absolute;
     z-index: -1;
   }
   &_top {
     padding-top: 72px;
-    padding-left: 83px;
+    padding-left: 200px;
   }
   &_opportunity_bottom {
     position: absolute;

@@ -1,6 +1,16 @@
 /*Disable touch swiping*/
 /*Adaptive*/
 @media (max-width: 767px) {
+  .mt-4-mobile {
+    display: block !important;
+  }
+  .logo {
+    padding-bottom: 41px !important;
+  }
+  #main {
+    padding-top: 14px !important;
+    padding-bottom: 35px !important;
+  }
   #main .adaptive {
     width: 100%;
     font-size: 36px;
@@ -15,6 +25,37 @@
   #main .qr-mobile {
     display: none;
   }
+  #main .apple {
+    display: block !important;
+  }
+  #main .google {
+    display: block !important;
+  }
+  #description {
+    position: static !important;
+  }
+  #description .simple_ellipse {
+    padding-top: 80px;
+    text-align: center;
+  }
+  #download {
+    text-align: center;
+  }
+  #download h3 {
+    width: auto !important;
+  }
+  #opportunity {
+    text-align: center;
+  }
+  #opportunity h3 {
+    width: auto !important;
+  }
+  #opportunity .text-qr p {
+    text-align: center !important;
+  }
+  #footer .main-btn {
+    padding: 16px 55px !important;
+  }
 }
 @font-face {
   font-family: "FuturaPTMedium";
@@ -23,6 +64,7 @@
 }
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -32,10 +74,14 @@ header .logo {
   padding-top: 42px;
   padding-bottom: 51px;
 }
+header .mt-4-mobile {
+  display: none;
+}
 
 #main {
   background: url(../img/header_bg.png) no-repeat;
   padding-top: 55px;
+  padding-bottom: 130px;
 }
 #main h1 {
   font-family: "FuturaPTMedium", sans-serif;
@@ -46,16 +92,18 @@ header .logo {
   width: 570px;
   padding-bottom: 49px;
 }
-#main .text-qr {
-  width: 195px;
+#main .apple {
+  display: none;
 }
-#main .text-qr p {
-  color: #1D2B3F;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+#main .google {
+  display: none;
 }
 
+#description {
+  position: relative;
+  top: -110px;
+  z-index: 1;
+}
 #description p {
   width: 270px;
   font-weight: 400;
@@ -76,6 +124,9 @@ header .logo {
   padding-top: 100px;
 }
 
+#download {
+  padding-top: 40px;
+}
 #download h3 {
   width: 570px;
   font-weight: 600;
@@ -101,12 +152,26 @@ header .logo {
   background-size: 100%;
 }
 
-.w-270 {
-  width: 270px;
+#footer {
+  padding-bottom: 114px;
+}
+#footer .main-btn {
+  background-color: #F8F2EC;
+  border: none;
+  padding: 16px 370px;
+}
+#footer .main-btn a {
+  color: #B68756;
 }
 
-.w-570 {
-  width: 570px;
+.text-qr {
+  width: 195px;
+}
+.text-qr p {
+  color: #1D2B3F;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .pl-160 {
@@ -119,19 +184,19 @@ header .logo {
 }
 .img-wrap_bottom {
   position: absolute;
-  left: -165px;
+  right: 200px;
   top: 72px;
   z-index: -2;
 }
 .img-wrap_middle {
   top: 0px;
-  right: 83px;
+  left: 65px;
   position: absolute;
   z-index: -1;
 }
 .img-wrap_top {
   padding-top: 72px;
-  padding-left: 83px;
+  padding-left: 200px;
 }
 .img-wrap_opportunity_bottom {
   position: absolute;
